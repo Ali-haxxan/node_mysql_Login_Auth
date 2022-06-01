@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/root4tech.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Root4tech</title>
+    <link rel="stylesheet" href="/bootstrap-3.1.1/css/bootstrap.min.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4 ">
+            <a class="mx-2" href="">
+                <img src="/root4tech.jpg"  alt="logo"  style="width: 200px; height: 200px;margin-top:45px; margin-left:22%;">
+                
+            </a>
+            <div >
+                <h1 style="margin-left:33%;">Signup</h1>
+                <p></p>
+                <hr>
+                <form action="/auth/register" method="POST">
+                    <div>
+                        {{#if message}}
+                            <h3 class="alert alert-danger mt-4">{{message}}</h3>
+                        {{/if}}
+                    </div>
+                    
+
+                      <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" name="name" placeholder="Enter Full Name" value="">
+                            <span class="text-danger"></span>
+                        
+                        
+                      </div>
+                        
+
+                   
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" name="email" placeholder="Enter Email" value="" >
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" name="password" placeholder="Enter password" >
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordConfirm">Confirm Password:</label>
+                        <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirm password" >
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-block btn-primary">Register</button>  
+                    </div>
+                    
+                    <a href="/login">Already have account!</a>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
